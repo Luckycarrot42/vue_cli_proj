@@ -1,5 +1,5 @@
 # vue_cli_proj
-Simple rputer exercise
+Simple router exercise
 
 ## Project setup
 ```
