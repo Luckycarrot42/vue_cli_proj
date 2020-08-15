@@ -1,4 +1,5 @@
 # vue_cli_proj
+Simple rputer exercise
 
 ## Project setup
 ```
