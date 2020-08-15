@@ -1,10 +1,27 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <nav class="navbar navbar-dark bg-dark px-3">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <router-link class="navbar_link" to="/">Home</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link class="navbar_link" to="/about">About</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link class="navbar_link" to="{name: 'Contact'}">Contacto</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link class="navbar_link" to="/blog/1">Blog</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link class="navbar_link" to="/servicios">Experiencias</router-link>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <router-view/>
     </div>
-    <router-view/>
   </div>
 </template>
 
@@ -16,17 +33,12 @@
   text-align: center;
   color: #2c3e50;
 }
-
-#nav {
-  padding: 30px;
+li{
+  padding-inline-end: 5px;
+}
+.navbar_link{
+  color: #ffffff;
+  text-decoration: none;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
